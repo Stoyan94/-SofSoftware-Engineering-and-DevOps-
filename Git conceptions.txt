@@ -1,0 +1,75 @@
+На български:
+
+Repo (repository)
+▪ Хранилището (репозиторито) е мястото, където се съхранява целият код на проекта заедно с историята на промените. 
+Може да бъде локално (на твоя компютър) или отдалечено (на сървър като GitHub, GitLab или Bitbucket). 
+Отдалеченото хранилище улеснява сътрудничеството между различни разработчици.
+
+Branch
+▪ Клонът е отделен път за разработка, който позволява да работиш върху различни функции или поправки, 
+без да променяш основния код (обикновено съхраняван в клона main или master). 
+Можеш да създаваш множество клонове, като всеки от тях представлява независима версия на проекта.
+
+Merge branches
+▪ Обединяването (merge) на клонове е процесът на сливане на две различни версии на проекта. 
+Най-често това се прави, за да се добавят промени от работен клон обратно към основния клон. 
+Git автоматично се опитва да обедини промените, но ако има конфликт (едни и същи редове код са променени по различен начин), трябва ръчно да го разрешиш.
+
+Clone
+▪ Клонирането е процесът на изтегляне на копие на отдалечено хранилище на твоя компютър. 
+Това ти позволява да имаш локална версия на проекта, върху която можеш да работиш. 
+Клонирането запазва не само текущото състояние на проекта, но и цялата му история на версиите.
+
+Commit
+▪ Комитът е операция, с която запазваш направените промени в локалното хранилище. 
+Всеки commit съдържа моментна снимка на кода и обяснение (commit message), което описва какво точно е променено. 
+Commit-ите се използват за проследяване на развитието на проекта.
+
+Pull
+▪ Pull означава да изтеглиш последните промени от отдалеченото хранилище и да ги обединиш с твоята локална версия. 
+Това е начин да актуализираш локалното си копие с последните допълнения на други членове от екипа.
+
+Push
+▪ Push изпраща локалните промени към отдалеченото хранилище. 
+Това позволява на други членове на екипа да видят и използват твоите последни промени. 
+Преди да можеш да push-неш, трябва да направиш commit на локалните си промени.
+
+
+
+
+
+
+На английски:
+
+Repo (repository)
+▪ The repository is the storage for the entire project, including the code and its version history. 
+It can be local (on your computer) or remote (hosted on platforms like GitHub, GitLab, or Bitbucket). 
+Remote repositories facilitate collaboration among multiple developers.
+
+Branch
+▪ A branch is a separate development path, allowing you to work on different features or fixes 
+without affecting the main codebase (usually stored in the main or master branch). 
+You can create multiple branches, with each representing an independent version of the project.
+
+Merge branches
+▪ Merging branches is the process of combining two different versions of the project. 
+This is typically done to integrate changes from a working branch back into the main branch. 
+Git tries to merge changes automatically, but if there are conflicts (when the same lines of code are modified differently), you’ll need to resolve them manually.
+
+Clone
+▪ Cloning is the process of downloading a copy of a remote repository to your computer. 
+This allows you to have a local version of the project to work on. 
+Cloning preserves not only the current state of the project but also its entire version history.
+
+Commit
+▪ A commit is an operation that saves your changes to the local repository. 
+Each commit contains a snapshot of the code and a message explaining what was changed. 
+Commits are used to track the evolution of the project over time.
+
+Pull
+▪ Pull means downloading the latest changes from the remote repository and merging them into your local version. 
+This is how you keep your local copy up-to-date with contributions from other team members.
+
+Push
+▪ Push sends your local changes to the remote repository, making them available for others to see and use. 
+Before pushing, you need to commit your local changes.

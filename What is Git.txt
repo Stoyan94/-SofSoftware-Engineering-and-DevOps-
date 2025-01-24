@@ -1,0 +1,20 @@
+На български:
+Git е система за контрол на версиите, която позволява на програмисти и екипи да работят заедно върху един и същи проект, 
+без да се притесняват, че ще изгубят старите версии на кода. 
+С Git можеш:
+
+Да проследяваш промените в проектите си.
+Да връщаш кода си към предишни версии, ако има проблем.
+Да работиш върху нови функционалности в отделни "клонове" (branches) и да ги обединяваш с основния код, когато са готови.
+Git е изключително популярен и се използва от разработчици по целия свят, особено в комбинация с платформи като GitHub, GitLab или Bitbucket.
+
+
+На английски:
+Git is a version control system that allows developers and teams 
+to collaborate on the same project without worrying about losing previous versions of the code. 
+With Git, you can:
+
+Track changes in your projects.
+Roll back to previous versions if something goes wrong.
+Work on new features in separate branches and merge them into the main codebase when ready.
+Git is widely used and popular among developers, often in combination with platforms like GitHub, GitLab, or Bitbucket.
