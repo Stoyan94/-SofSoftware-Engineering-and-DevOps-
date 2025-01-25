@@ -14,7 +14,7 @@ namespace GitBasics
 
         public Person(string name, int age, string speak) : this(speak)
         {
-            Name = name
+            Name = name;
             Age = age;            
         }
         public string Name { get; set; }
