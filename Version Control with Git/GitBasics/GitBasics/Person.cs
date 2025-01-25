@@ -20,6 +20,7 @@ namespace GitBasics
         public string Name { get; set; }
         public string Speak { get; set; }
         public int Age { get; set; }
+        public int Height { get; set; }
     }
 }
 
