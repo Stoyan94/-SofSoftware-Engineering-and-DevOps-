@@ -10,7 +10,11 @@
             newItem.Add("Item 2");
             newItem.Add("Item 3");
 
-            Console.WriteLine(newItem[1]);
+            foreach (var item in newItem)
+            {
+                Console.WriteLine(item);
+            }
+
         }
     }
 }
