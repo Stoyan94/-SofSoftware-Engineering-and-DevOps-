@@ -7,15 +7,15 @@ namespace GitBasics
             
         }
 
-        public Person(string name)
+        public Person(string speak)
         {
-            Name = name;
+            Speak = speak;
         }
 
-        public Person(string name, int age, string speak) : this(name)
+        public Person(string name, int age, string speak) : this(speak)
         {
-            Age = age;
-            Speak = speak;
+            Name = name
+            Age = age;            
         }
         public string Name { get; set; }
         public int Age { get; set; }
