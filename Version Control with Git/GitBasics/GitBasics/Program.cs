@@ -6,22 +6,22 @@
         {
             var allPersons = new List<Person>();
 
-            var newPerson = new Person("Stoyan", 25, "hi");
+            var newPerson = new Person("Hi", "Stoyan", 25);
 
             allPersons.Add(newPerson);
-            allPersons.Add(new Person("Richi"));
+            allPersons.Add(new Person("Hi"));
 
             foreach (var peron in allPersons)
             {
-                Console.WriteLine(peron.Name);
+                Console.WriteLine(peron.Speak);
 
-                if (peron.Age == 0 || peron.Speak is null)
+                if (peron.Age == 0 || peron.Name is null)
                 {
                     continue;
                 }
 
+                Console.WriteLine(peron.Name);
                 Console.WriteLine(peron.Age);
-                Console.WriteLine(peron.Speak);
             }
 
         }
