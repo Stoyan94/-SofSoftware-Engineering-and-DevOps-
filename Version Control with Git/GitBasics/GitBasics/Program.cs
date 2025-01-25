@@ -4,15 +4,24 @@
     {
         static void Main(string[] args)
         {
-            var newItem = new List<string>();
+            var allPersons = new List<Person>();
 
-            newItem.Add("Name: Person");
-            newItem.Add("Age: Person");
-            newItem.Add("Speak: Person");
+            var newPerson = new Person("Stoyan", 25, "hi");
 
-            foreach (var item in newItem)
+            allPersons.Add(newPerson);
+            allPersons.Add(new Person("Richi"));
+
+            foreach (var peron in allPersons)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(peron.Name);
+
+                if (peron.Age == 0 || peron.Speak is null)
+                {
+                    continue;
+                }
+
+                Console.WriteLine(peron.Age);
+                Console.WriteLine(peron.Speak);
             }
 
         }
