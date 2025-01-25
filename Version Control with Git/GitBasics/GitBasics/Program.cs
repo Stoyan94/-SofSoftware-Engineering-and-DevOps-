@@ -6,9 +6,9 @@
         {
             var newItem = new List<string>();
 
-            newItem.Add("Item 1");
-            newItem.Add("Item 2");
-            newItem.Add("Item 3");
+            newItem.Add("Name: Person");
+            newItem.Add("Age: Person");
+            newItem.Add("Speak: Person");
 
             foreach (var item in newItem)
             {
