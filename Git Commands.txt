@@ -1,0 +1,148 @@
+Ето командите, които съответстват на описаните концепции:
+Repo (repository)
+
+За да създадеш ново локално хранилище:
+bash
+git init
+
+За да клонираш съществуващо отдалечено хранилище:
+bash
+git clone <url>
+
+Branch
+За да създадеш нов клон:
+bash
+git branch <branch-name>
+
+За да превключиш към друг клон:
+bash
+git checkout <branch-name>
+
+Или с по-новия синтаксис:
+bash
+git switch <branch-name>
+Merge branches
+
+За да обединиш клонове:
+bash
+git merge <branch-name>
+
+Clone
+За да клонираш отдалечено хранилище:
+bash
+git clone <url>
+
+Commit
+За да добавиш промени към стадирането:
+bash
+git add <file> 
+# или всички файлове: git add .
+
+За да направиш commit:
+bash
+git commit -m "Съобщение за commit"
+
+Pull
+За да изтеглиш и обединиш промените от отдалечено хранилище:
+bash
+git pull
+
+Push
+За да изпратиш локалните промени към отдалечено хранилище:
+bash
+git push
+
+Обобщение:
+Тези концепции описват как работи Git, но самите команди (като git init, git pull, git push и др.) са начинът, по който ги изпълняваш. 
+Ако се интересуваш от пълния процес за работа с Git, мога да ти опиша подробно как се изпълняват тези операции в реален проект.
+
+
+
+
+
+
+Git commands:
+
+Git Concepts and Their Commands
+Repo (repository)
+
+A repository is the storage for your project, including the code and its history.
+Commands:
+Create a new local repository:
+git init
+Clone an existing remote repository:
+
+
+git clone <url>
+Branch
+
+A branch is a parallel version of the project where you can work independently on features or fixes.
+Commands:
+
+Create a new branch:
+git branch <branch-name>
+Switch to a branch:
+
+git checkout <branch-name>
+or the modern way:
+git switch <branch-name>
+
+Merge branches
+Merging combines the changes from one branch into another (usually into the main branch).
+Command:
+
+git merge <branch-name>
+
+Clone
+Cloning creates a local copy of a remote repository.
+Command:
+git clone <url>
+
+Commit
+A commit is a snapshot of your changes saved in the local repository with a message describing what was done.
+Commands:
+Stage changes for a commit:
+git add <file>
+# Or stage all changes:
+git add .
+
+Commit the changes:
+git commit -m "Your commit message"
+
+
+Pull
+Pulling fetches changes from the remote repository and merges them into your local branch.
+Command:
+git pull
+
+Push
+Pushing sends your committed changes to the remote repository.
+Command:
+git push
+Example Workflow
+Here’s how you might use these commands together:
+
+
+
+Clone a repository:
+git clone <url>
+
+Create and switch to a new branch:
+git branch feature/new-feature  
+git switch feature/new-feature
+
+
+Make changes, stage them, and commit:
+git add .  
+git commit -m "Added a new feature"
+
+
+
+Push the changes to the remote repository:
+git push origin feature/new-feature
+
+
+
+Pull updates from the main branch and merge:
+git pull origin main  
+git merge main
