@@ -1,10 +1,14 @@
 ﻿namespace GtiEx
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<string> cars = new List<string>();
+
+            var carNissan = new string[]{"nissan"};
+
+            
         }
     }
 }
