@@ -4,11 +4,21 @@
     {
         static void Main(string[] args)
         {
-            List<string> cars = new List<string>();
+            List<Car> cars = new List<Car>();
 
-            var carNissan = new string[]{"nissan"};
+            var fordCar = new Car("Ford");
 
-            
+            var nissanCar = new Car("Nissan", "GTR", "John Doe");
+
+            cars.Add(fordCar);
+            cars.Add(nissanCar);
+
+            foreach (var car in cars)
+            {
+                Console.WriteLine($"{car.Maker}");
+                Console.WriteLine($"{car.Model}");
+                Console.WriteLine($"{car.Client}");
+            }
         }
     }
 }
