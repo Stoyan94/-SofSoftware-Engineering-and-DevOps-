@@ -1,27 +1,18 @@
-﻿namespace GtiEx
+﻿using System.Diagnostics.Metrics;
+
+namespace GtiEx
 {
-    public class Car
+    public class Car : Vehicle
     {
-        public Car()
+        public Car(string maker) : base(maker)
         {
-            
+
         }
 
-        public Car(string maker) : base()
+        public Car(string maker, string model, string client) 
+            : base(maker, model, client)
         {
-            Maker = maker;
+
         }
-
-        public Car(string maker ,string model, string client) : this (maker)
-        {
-            Model = model;
-            Client = client;
-        }
-
-        public string Maker { get; set; }
-
-        public string Model { get; set; }
-
-        public string Client { get; set; }
     }
 }

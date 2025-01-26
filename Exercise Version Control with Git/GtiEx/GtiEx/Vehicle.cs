@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace GtiEx
 {
-    internal class Vehicle
+    public class Vehicle
     {
+        public Vehicle()
+        {
+            
+        }
+        public Vehicle(string maker)
+        {
+            Maker = maker;
+        }
+        
+        public Vehicle(string maker, string model, string client) : this(maker)
+        {
+            Model = model;
+            Client = client;
+        }
+
+        public string Maker { get; set; }
+        public string Model { get; set; }
+        public string Client { get; set; }
     }
 }
