@@ -28,6 +28,7 @@
             Console.WriteLine(programmer.Name);
 
             programmer.Code();
+            programmer.Test();
 
         }
     }

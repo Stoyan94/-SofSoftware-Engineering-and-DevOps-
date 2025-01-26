@@ -16,5 +16,10 @@
         {
             Console.WriteLine("Coding...");
         }
+
+        public void Test()
+        {
+            Console.WriteLine("Testing...");
+        }
     }
 }
