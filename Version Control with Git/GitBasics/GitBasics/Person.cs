@@ -4,7 +4,7 @@ namespace GitBasics
     {
         public Person()
         {
-            
+
         }
 
         public Person(string speak)
@@ -15,11 +15,13 @@ namespace GitBasics
         public Person(string name, int age, string speak) : this(speak)
         {
             Name = name;
-            Age = age;            
+            Age = age;
         }
+
         public string Name { get; set; }
         public int Age { get; set; }
         public string Speak { get; set; }
 
+    }
 }
 

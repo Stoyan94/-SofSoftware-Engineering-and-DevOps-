@@ -24,6 +24,11 @@
                 Console.WriteLine(peron.Speak);
             }
 
+            var programmer = new Programmer("Maniac");
+            Console.WriteLine(programmer.Name);
+
+            programmer.Code();
+
         }
     }
 }
