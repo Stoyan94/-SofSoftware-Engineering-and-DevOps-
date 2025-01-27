@@ -10,6 +10,7 @@
 
             var nissanCar = new Car("Nissan", "GTR", "John Doe", "1995");
             var toyotaCar = new Car("Toyota", "Supra", "John Doe", "1995");
+            var hondaCar = new Car("Honda", "Civic", "John Doe", "1995");
 
             cars.Add(fordCar);
             cars.Add(nissanCar);
