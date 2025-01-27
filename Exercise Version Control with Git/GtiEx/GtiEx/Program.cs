@@ -10,10 +10,14 @@
 
             var nissanCar = new Car("Nissan", "GTR", "John Doe", "1995");
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             var toyotaCar = new Car("Toyota", "Supra", "John Doe", "1995");
             var hondaCar = new Car("Honda", "Civic", "John Doe", "1995");
 >>>>>>> d275162 (second cherry)
+=======
+            var toyotaCar = new Car("Toyota", "Supra", "John Doe", "1995");
+>>>>>>> 1422ef4 (first-cherry)
 
             cars.Add(fordCar);
             cars.Add(nissanCar);
@@ -22,6 +26,7 @@
 
             var fordTruck = new Truck("Ford", "F-150", "Jane Doe", "1992");
             var nissanTruck = new Truck("Nissan", "Titan", "John Doe", "1999");
+            var toyotaTruck = new Truck("Toyota", "Tundra", "John Doe", "2000");
 
             trucks.Add(fordTruck);
             trucks.Add(nissanTruck);
