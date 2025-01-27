@@ -9,10 +9,7 @@ namespace GtiEx
 
         }
 
-        public Car(string maker, string model, string client) 
-            : base(maker, model, client)
-        {
-
-        }
+        public Car(string maker, string model, string client, string produceYear) 
+            : base(maker, model, client, produceYear) {}
     }
 }

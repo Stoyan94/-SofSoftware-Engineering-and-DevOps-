@@ -17,14 +17,16 @@ namespace GtiEx
             Maker = maker;
         }
         
-        public Vehicle(string maker, string model, string client) : this(maker)
+        public Vehicle(string maker, string model, string client, string produceYear) : this(maker)
         {
             Model = model;
             Client = client;
+            ProduceYear = produceYear;
         }
 
         public string Maker { get; set; }
         public string Model { get; set; }
         public string Client { get; set; }
+        public string ProduceYear { get; set; }
     }
 }

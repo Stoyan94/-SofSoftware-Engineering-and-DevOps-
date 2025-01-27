@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GtiEx
+﻿namespace GtiEx
 {
-    internal class Truck
+    public class Truck : Vehicle
     {
+        public Truck(string maker, string model, string client, string produceYear) 
+                    : base(maker, model, client, produceYear) {}
     }
 }
