@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "2e5db447-861b-4d25-ab8f-0026d4279291",
+		"_postman_id": "379a4aa7-e0b3-4b9c-9b24-0bdde5d4d896",
 		"name": "TrelloAPIFinalCollection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "15966279"
+		"_exporter_id": "34157207"
 	},
 	"item": [
 		{
@@ -214,7 +214,7 @@
 							"const responseData = pm.response.json();\r",
 							"    \r",
 							"pm.test(\"Response has all the expected properties\", function() {\r",
-							"pm.expect(responseData).to.have.all.keys('id', 'name', 'closed', 'color', 'idBoard', 'pos', 'limits');\r",
+							"pm.expect(responseData).to.have.all.keys('id', 'name', 'closed', 'color', 'idBoard', 'pos', 'limits', 'type', 'datasource');\r",
 							"});\r",
 							"\r",
 							"pm.test(\"'closed' is false and of type boolean\", function() {\r",
@@ -232,7 +232,8 @@
 							"\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
