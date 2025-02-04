@@ -310,3 +310,6 @@ project.lock.json
 
 # UWP Projects
 AppPackages/
+
+TrelloAPIFinalCollection.postman_collection
+Trello.postman_environment
