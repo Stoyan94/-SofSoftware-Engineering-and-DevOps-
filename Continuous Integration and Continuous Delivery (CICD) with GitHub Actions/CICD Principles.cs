@@ -53,3 +53,60 @@ Junior developer започва да добавя нова функционал�
 Чести итерации	                  Малки промени, които често се качват в основния клон.	                Честото качване на малки промени в основния клон.
 Малки сегменти от код	          Работа с малки части от код, които се качват редовно.	                Добавяне на функционалности на малки стъпки.
 Автоматизирани билдове и тестове  Използване на CI/CD инструменти за автоматизация на тестовете.	    Jenkins или GitLab стартиране на тестове след commit.
+
+
+
+
+
+
+
+
+CI/CD Principles (in English):
+Single Source Repository
+
+Description: This is a central repository(e.g., Git) where all the files needed to build the project are stored. It contains not only the source code but also database scripts, libraries, and configuration files.
+Example in a real-world scenario:
+You have a Git repository with the application code and SQL migration scripts stored in it.
+
+The repository may have folders like:
+src / for source code,
+database/ for database scripts,
+libs/ for external libraries,
+scripts/ for automation tasks.
+Example of repository structure:
+
+css
+Copy
+Edit
+my_project /
+├── src /
+│   └── main /
+├── database /
+│   └── migrations /
+├── libs /
+└── scripts /
+
+Frequent Iterations and Check - ins to the Main Branch
+Description: Frequently pushing small changes to the main branch allows for faster integration of new features and reduces the risk of conflicts when merging different developers’ changes.
+Example in a real - world scenario:
+As a junior developer, you may add small features or fix bugs in the application.After completing a task, you quickly push the changes to the main branch to integrate with the rest of the team’s work.
+For example: you're adding a new page to a website, and after you finish building it, you push your changes to the main branch with a comment like “New page added.”
+
+Small Segments of Code
+Description: Instead of making large changes and integrating them later, it is better to work with small segments of code that are frequently merged into the main branch.This reduces the risk of errors and conflicts.
+Example in a real - world scenario:
+As a junior developer, you start by adding a new login form.
+Instead of building the whole login form at once, you can first add small functionalities like username and password fields, and push them to the main branch.This helps in testing and integration.
+
+Automated and Self - Testing Builds
+Description: When you push your changes, it is important that they automatically go through tests to ensure nothing in the project is broken.This is usually handled by CI / CD tools like Jenkins, GitLab CI, CircleCI, etc.
+Example in a real - world scenario:
+Once you push your changes, the CI / CD system automatically triggers a build and tests to ensure the new functionality works as expected.
+For example: after pushing changes, the system runs tests to check if a login form is functioning properly.
+
+CI / CD Process Table:
+Principle                   Description	                                                    Example
+Single Source Repository	All files needed for the build are in a single repository.	    Git repo with code, database, and scripts.
+Frequent                    Iterations	Small changes are pushed to the main branch often.	Frequent commits to the main branch.
+Small Segments of Code	    Work in small code segments that are regularly integrated.	    Add small functionalities step-by-step.
+Automated Builds and Tests	Use CI/CD tools to automate builds and tests.	                Jenkins or GitLab triggers tests after each commit.
