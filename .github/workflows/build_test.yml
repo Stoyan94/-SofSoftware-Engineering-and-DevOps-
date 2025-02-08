@@ -15,14 +15,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Clone the GitHub repo on the runner virtual machine
+    - name: Clone the GitHub repo on the runner - virtual machine
       uses: actions/checkout@v4
     - name: Use Node.js 20
       uses: actions/setup-node@v4
       with:
         node-version: 20
         cache: 'npm'
+    - name: Change directory to the app folder
+      run: cd 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App'
     - name: Install program dependencies
-      run: npm install --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/'
+      run: npm install
     - name: Run Integration tests
-      run: npm run test --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/'
+      run: npm run test
