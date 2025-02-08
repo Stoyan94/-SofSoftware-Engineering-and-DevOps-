@@ -1,0 +1,28 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/**'
+
+jobs:
+  build_test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Clone the GitHub repo on the runner - virtual machine
+      uses: actions/checkout@v4
+    - name: Use Node.js 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'npm'
+    - name: Install program dependencies
+      run: npm install
+    - name: Run Integration tests
+      run: npm run test
