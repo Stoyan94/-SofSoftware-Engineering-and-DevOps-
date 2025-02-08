@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Clone the GitHub repo on the runner - virtual machine
+    - name: Clone the GitHub repo on the runner virtual machine
       uses: actions/checkout@v4
     - name: Use Node.js 20
       uses: actions/setup-node@v4
