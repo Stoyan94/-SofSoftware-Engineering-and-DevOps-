@@ -19,4 +19,4 @@ module.exports = {
     'watch-files': ['lib/**/*.js','test/**/*.js'],
     'watch-ignore': ['lib/vendor']
   };
-  // test
+  // test against the default reporter
