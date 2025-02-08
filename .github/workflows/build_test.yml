@@ -4,11 +4,11 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App**'
+      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/**'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App**'
+      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/**'
 
 jobs:
   build_test:
@@ -23,6 +23,6 @@ jobs:
         node-version: 20
         cache: 'npm'
     - name: Install program dependencies
-      run: npm install --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App'
+      run: npm install --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/'
     - name: Run Integration tests
-      run: npm run test --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App'
+      run: npm run test --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/'
