@@ -23,6 +23,6 @@ jobs:
         node-version: 20
         cache: 'npm'
     - name: Install program dependencies
-      run: npm install
+      run: npm install --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App'
     - name: Run Integration tests
-      run: npm run test
+      run: npm run test --prefix 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App'
