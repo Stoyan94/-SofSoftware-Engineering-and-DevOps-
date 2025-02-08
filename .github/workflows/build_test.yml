@@ -4,11 +4,11 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/**'
+      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App**'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App/**'
+      - 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App**'
 
 jobs:
   build_test:
