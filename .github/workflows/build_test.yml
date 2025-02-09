@@ -22,6 +22,8 @@ jobs:
       with:
         node-version: 20
         cache: 'npm'
+    - name: Change directory to the app folder
+      run: cd 'Exercise Continuous Integration and Continuous Delivery (CICD) with GiHub Actions/01-Student-Registry-App'
     - name: Install program dependencies
       run: npm install
     - name: Run Integration tests
