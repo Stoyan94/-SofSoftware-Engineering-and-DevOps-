@@ -1,0 +1,2 @@
+Auto-deploy must be off because, with every commit to our main branch, the app will deploy again and again. 
+However, we don’t want this, as we first need to run tests or perform other tasks before deploying the app.
