@@ -1,0 +1,23 @@
+Set of plugins that support the integration and implementation
+of CD pipelines
+
+▪ Provides a domain-specific language (DSL) for defining steps
+involved in the software delivery process
+
+▪ Automates the entire process of software delivery
+▪ Ensures that software is always in a releasable state through
+its lifecycle
+
+
+Pipeline Components
+
+Stages
+▪ High-level phases that organize the main activities in a pipeline
+▪ Build, test, deploy, etc.
+▪ Steps
+▪ Concrete tasks within each stage
+▪ Nodes
+▪ Define the system or agent where the pipeline or a specific stage
+will run
+▪ Agents
+▪ Direct the pipeline where to run
