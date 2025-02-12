@@ -1,0 +1,75 @@
+Practice that treats the continuous integration, continuous
+delivery and continuous deployment as part of the
+application code
+
+▪ Enables collaboration on design and changes
+▪ Facilitates tracking changes and reviewing previous versions
+▪ Improves transparency
+▪ All team members can see the pipeline's logic and understand
+the delivery process
+
+Jenkinsfile
+
+Core component representing the "Pipeline as Code" philosophy
+
+▪ Defines the pipeline configuration as code
+▪ Outlines the stages, steps and actions that Jenkins will execute during the
+build, test and deploy processes
+▪ Usually, placed at the root of the project repository
+▪ Allows revision and versioning
+▪ Two main types of syntax, written in Groovy (optionally typed and
+dynamic language)
+▪ Choice between the two types depends on project's complexity and
+team's preferences
+
+
+Declarative Syntax
+
+Newer and simplified way            
+of defining the pipelines
+▪ Aims to provide more
+readable way to define
+pipeline configuration
+▪ Easy to read and write
+▪ Pre-defined structure
+
+pipeline {
+   agent any
+   stages {
+      stage('Build') {
+         steps {
+         // Commands to build
+      }
+   }
+   post {
+      always {
+         // actions to perform after
+the pipeline runs
+    }
+  }
+}
+
+
+Scripted Syntax
+
+Traditional way of scripting
+the Jenkinsfile
+
+▪ Based on Groovy
+▪ Provides more flexibility
+and control
+▪ Complete control over
+the script
+▪ Allows more complex logic
+
+node {
+   stage('Build') {
+      // Commands to build
+   }
+   stage(Test') {
+      // Commands to build
+   }
+   stage('Deploy') {
+      // Commands to build
+   }
+}
