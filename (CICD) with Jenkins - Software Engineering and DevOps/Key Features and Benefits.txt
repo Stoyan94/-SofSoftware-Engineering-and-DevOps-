@@ -1,11 +1,19 @@
 Web-based interface
 
 ▪ Easier configuration and management of CI/CD
+
 ▪ No need for extensive scripting
+
 ▪ Extensible
+
 ▪ Through its plugin architecture
+
 ▪ Providing a wide range of options for task completion
+
 ▪ Supports distributed builds
+
 ▪ Allows multiple build agents to work in parallel
+
 ▪ Optimizes resource utilization
+
 ▪ Speeds up development process
